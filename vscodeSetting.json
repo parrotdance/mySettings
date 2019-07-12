@@ -1,0 +1,191 @@
+{
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.iconTheme": "vscode-icons",
+	"terminal.integrated.experimentalTextureCachingStrategy": "dynamic",
+	// 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
+	"editor.tabSize": 2,
+	// 控制字体系列。
+	"editor.fontFamily": "'FiraCode-Retina', DengXian, Monaco, Menlo, 'Courier New', monospace",
+	// 控制是否显示 minimap
+	"editor.minimap.enabled": false,
+	// 控制光标样式，接受的值为 "block"、"block-outline"、"line"、"line-thin" 、"underline" 和 "underline-thin"
+	"editor.cursorStyle": "line",
+	// 控制编辑器是否在滚动时使用动画
+	"editor.smoothScrolling": true,
+	// 控制光标动画样式，可能的值为 "blink"、"smooth"、"phase"、"expand" 和 "solid"
+	"editor.cursorBlinking": "smooth",
+	// 控制编辑器是否应该允许通过拖放移动所选项。
+	"editor.dragAndDrop": false,
+	// 控制按“Enter”键是否像按“Tab”键一样接受建议。这能帮助避免“插入新行”和“接受建议”之间的歧义。值为“smart”时表示，仅当文字改变时，按“Enter”键才能接受建议
+	"editor.acceptSuggestionOnEnter": "off",
+	// Controls how the editor should render the current line highlight, possibilities are 'none', 'gutter', 'line', and 'all'.
+	"editor.renderLineHighlight": "gutter",
+	// "editor.scrollbar.vertical": "hidden",
+	"editor.hideCursorInOverviewRuler": true,
+	// Controls whether the smooth caret animation should be enabled.
+	"editor.cursorSmoothCaretAnimation": true,
+	// 在文件列表和目录下显示警告和错误.
+	"problems.decorations.enabled": false,
+	// Controls if turning on Zen Mode also centers the layout.
+	"zenMode.centerLayout": true,
+
+	"bracketPairColorizer.showHorizontalScopeLine": false,
+
+	//Vetur setting
+	// Whether to have initial indent for <style> region
+	"vetur.format.styleInitialIndent": true,
+	// Whether to have initial indent for <script> region
+	"vetur.format.scriptInitialIndent": true,
+	// Default formatter for <template> region
+	"vetur.format.defaultFormatter.html": "js-beautify-html",
+	// Default formatter for <style lang='stylus'> region
+	"vetur.format.defaultFormatter.stylus": "stylus-supremacy",
+	// Validate vue-html in <template> using eslint-plugin-vue
+	"vetur.validation.template": true,
+	"workbench.sideBar.location": "left",
+	// Stylus setting
+	"stylusSupremacy.insertColons": true, // 是否插入冒号
+	"stylusSupremacy.insertSemicolons": false, // 是否插入分号
+	"stylusSupremacy.insertBraces": false, // 是否插入大括号
+	"stylusSupremacy.insertNewLineAroundImports": false, // import之後是否換行
+	"stylusSupremacy.insertNewLineAroundBlocks": "root", // 兩個選擇器中是否換行
+	"stylusSupremacy.sortProperties": "grouped", // 属性排序方式,
+	"workbench.colorTheme": "JetJet",
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#1A1D21",
+		"titleBar.inactiveBackground": "#1A1D21",
+		"titleBar.activeForeground": "#E6E6E6",
+		"titleBar.inactiveForeground": "#666",
+		// "sideBar.border": "#404F7D",
+		"tab.activeBackground": "#012A4B",
+		"tab.inactiveBackground": "#1A1D21",
+		// "tab.activeBorder": "#35C0F4",
+		"tab.activeBorderTop": "#35C0F4",
+		"panel.border": "#404F7D",
+		"panelTitle.activeBorder": "#404F7D",
+		"editorCursor.foreground": "#fff",
+		"statusBar.background": "#1A1D21",
+		"activityBar.background": "#1A1D21",
+		"activityBarBadge.background": "#012A4D",
+		"activityBarBadge.foreground": "#E6E6E6",
+		"editorGroup.background": "#1A1D21",
+		"sideBar.background": "#1A1D21",
+		"editorGroupHeader.tabsBackground": "#1A1D21",
+		"editorIndentGuide.activeBackground": "#00bfff",
+	},
+	// How many spaces to use for each level of indentation. Defaults to 4. "t" means use hard tabs.
+	"sassFormat.indent": 2,
+	"beautify.config": {
+		"selector_separator_newline": false,
+	},
+	// Enable/disable default JSON formatter (requires restart)
+	"json.format.enable": true,
+	// Wechat mini program files identify
+	// Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
+	"files.associations": {
+		"*.wxml": "html",
+		"*.wxss": "scss",
+	},
+	// When set, text selected in the terminal will be copied to the clipboard.
+	"terminal.integrated.copyOnSelection": true,
+	// Controls whether the terminal cursor blinks.
+	"terminal.integrated.cursorBlinking": true,
+
+	// beautify
+	"html.format.indentInnerHtml": 2,
+	"extensions.autoUpdate": false,
+	// Preferred quote style to use for quick fixes: 'single' quotes, 'double' quotes, or 'auto' infer quote type from existing imports. Requires TypeScript >= 2.9
+	"javascript.preferences.quoteStyle": "single",
+	// Vim setting ------------
+
+	// Use system clipboard for unnamed register.
+	"vim.useSystemClipboard": true,
+	// In visual mode, start a search with * or # using the current selection
+	"vim.visualstar": true,
+	// Customize cursor style per mode
+	"vim.cursorStylePerMode": {
+		"normal": "block",
+		"insert": "line",
+		"replace": "underline"
+	},
+	// CUSTOM KEY MAP
+	// What key should <leader> map to in remappings?
+	"vim.leader": "-",
+	"vim.normalModeKeyBindingsNonRecursive": [{
+			"before": ["<C-n>"],
+			"commands": [{
+				"command": ":nohl",
+			}]
+		},
+		{
+			"before": ["leader", "w"],
+			"commands": [{
+				"command": "workbench.action.files.save",
+			}]
+		},
+		{
+			"before": ["z", "h"],
+			"after": ["<C-w>", "h"]
+		},
+		{
+			"before": ["z", "j"],
+			"after": ["<C-w>", "j"]
+		},
+		{
+			"before": ["z", "k"],
+			"after": ["<C-w>", "k"]
+		},
+		{
+			"before": ["z", "l"],
+			"after": ["<C-w>", "l"]
+		}
+	],
+	"vim.insertModeKeyBindings": [{
+		"before": ["j", "j"],
+		"after": ["<Esc>"]
+	}],
+	"vim.visualModeKeyBindingsNonRecursive": [{
+			"before": [">"],
+			"commands": [{
+				"command": "editor.action.indentLines"
+			}]
+		},
+		{
+			"before": ["<"],
+			"commands": [{
+				"command": "editor.action.outdentLines"
+			}]
+		},
+		{
+			"before": ["["],
+			"commands": [{
+				"command": "editor.action.moveLinesUpAction"
+			}]
+		},
+		{
+			"before": ["]"],
+			"commands": [{
+				"command": "editor.action.moveLinesDownAction"
+			}]
+		}
+	],
+	"terminal.integrated.rendererType": "dom",
+	"breadcrumbs.enabled": false,
+	"editor.fontWeight": "100",
+	// -------------
+	// ---- beautify config ----
+	// A path to a file, or an object containing the configuration options for js-beautify. If the .jsbeautifyrc file exists in project root, it overrides this configuration.
+	"beautify.config": {
+		"indent_size": 2,
+		"indent_with_tabs": true
+	},
+	// Show active bracket scope in gutter?
+	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	// Show a horizontal line to create a block around the active bracket scope?
+	"bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+  // Show a vertical line on the left side of the editor representing the active bracket scope?
+	"bracket-pair-colorizer-2.showVerticalScopeLine": false,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+}
