@@ -5,7 +5,8 @@
 	// 一个制表符等于的空格数。该设置在 `editor.detectIndentation` 启用时根据文件内容进行重写。
 	"editor.tabSize": 2,
 	// 控制字体系列。
-	"editor.fontFamily": "'FiraCode-Retina', DengXian, Monaco, Menlo, 'Courier New', monospace",
+	"editor.fontFamily": "'Fira Code', DengXian, Monaco, Menlo, 'Courier New', monospace",
+	"editor.fontLigatures": true,
 	// 控制是否显示 minimap
 	"editor.minimap.enabled": false,
 	// 控制光标样式，接受的值为 "block"、"block-outline"、"line"、"line-thin" 、"underline" 和 "underline-thin"
@@ -30,12 +31,6 @@
 	"zenMode.centerLayout": true,
 
 	"bracketPairColorizer.showHorizontalScopeLine": false,
-
-	//Vetur setting
-	// Whether to have initial indent for <style> region
-	"vetur.format.styleInitialIndent": true,
-	// Whether to have initial indent for <script> region
-	"vetur.format.scriptInitialIndent": true,
 	// Default formatter for <template> region
 	"vetur.format.defaultFormatter.html": "js-beautify-html",
 	// Default formatter for <style lang='stylus'> region
@@ -101,6 +96,7 @@
 	// Use system clipboard for unnamed register.
 	"vim.useSystemClipboard": true,
 	// In visual mode, start a search with * or # using the current selection
+	"vim.hlsearch": true,
 	"vim.visualstar": true,
 	// Customize cursor style per mode
 	"vim.cursorStylePerMode": {
@@ -171,7 +167,7 @@
 	],
 	"terminal.integrated.rendererType": "dom",
 	"breadcrumbs.enabled": false,
-	"editor.fontWeight": "100",
+	"editor.fontWeight": "500",
 	// -------------
 	// ---- beautify config ----
 	// A path to a file, or an object containing the configuration options for js-beautify. If the .jsbeautifyrc file exists in project root, it overrides this configuration.
@@ -180,12 +176,28 @@
 		"indent_with_tabs": true
 	},
 	// Show active bracket scope in gutter?
-	"bracket-pair-colorizer-2.showBracketsInGutter": true,
+	"bracket-pair-colorizer-2.showBracketsInGutter": false,
 	// Show a horizontal line to create a block around the active bracket scope?
 	"bracket-pair-colorizer-2.showHorizontalScopeLine": false,
   // Show a vertical line on the left side of the editor representing the active bracket scope?
 	"bracket-pair-colorizer-2.showVerticalScopeLine": false,
 	"[html]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+	"editor.fontSize": 12,
+	"eslint.autoFixOnSave": true,
+	"eslint.validate": [
+    "javascript",{
+        "language": "vue",
+        "autoFix": true
+    },"html",
+    "vue"
+	],
+	"eslint.options": {
+		"extensions": [
+				".js",
+				".vue"
+		]
 	},
 }
